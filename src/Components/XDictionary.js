@@ -55,8 +55,10 @@ matching()
             <button onClick={handleClick}>Search</button>
 </div>
        
-   <p className='definition'><strong>Definition: </strong></p>
-  {definition&& <p className='definition'>{definition}</p>}
+   <p className='definition'><strong>Definition: </strong>
+    {definition?definition:null}   
+   </p>
+
 
     </div>
   )
