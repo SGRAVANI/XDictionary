@@ -53,11 +53,11 @@ matching()
         <div className='input-container'>
             <input type="text" placeholder='Search for a word' value={inp} onChange={(e)=>setInp(e.target.value)} />
             <button onClick={handleClick}>Search</button>
+</div>
+       
+   <p className='definition'><strong>Definition: </strong></p>
+  {definition&& <p className='definition'>{definition}</p>}
 
-        </div>
-   {       definition?<div><p className='definition'><strong>Definition: </strong></p>
-   <p className='definition'>{definition}</p></div>
-   :""}
     </div>
   )
 }
