@@ -22,6 +22,10 @@ if(!inp)
 },[inp])
 function handleClick()
 {
+ if(!inp)
+ {
+    setDefinition("Word not found in the dictionary.")
+ }   
 let ipWord=inp.toLowerCase()
 console.log(inp)
 var ele=data.find((ele)=>{return ele.word.toLowerCase()==ipWord})
