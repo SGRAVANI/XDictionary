@@ -19,14 +19,13 @@ if(!inp)
 {
     setDefinition("")
 }
+else{
+    matching()
+}
 },[inp])
-function handleClick()
+function matching()
 {
- if(!inp)
- {
-    setDefinition("Word not found in the dictionary.")
- }   
-let ipWord=inp.toLowerCase()
+    let ipWord=inp.toLowerCase()
 console.log(inp)
 var ele=data.find((ele)=>{return ele.word.toLowerCase()==ipWord})
 console.log(ele)
@@ -37,6 +36,16 @@ setDefinition(ele.meaning)
 else{
   setDefinition("Word not found in the dictionary.")  
 }
+}
+function handleClick()
+{
+ if(!inp)
+ {
+    setDefinition("Word not found in the dictionary.")
+ }   
+ else{
+matching()
+ }
 }
     return (
     <div className='container'>
