@@ -116,8 +116,8 @@ export default function XDictionary() {
                 <button onClick={handleClick}>Search</button>
             </div>
             <p className='definition'>
-                <strong>Definition:</strong><br />
-                {definition}
+                <strong>Definition:</strong>
+                <p>{definition}</p>
             </p>
         </div>
     );
